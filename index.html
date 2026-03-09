@@ -11,7 +11,12 @@
         <nav>
             <div class="container">
                 <h1 class="logo">Delicious Bites</h1>
-                <ul class="nav-links">
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#menu">Menu</a></li>
@@ -53,8 +58,14 @@
     <section id="menu" class="menu">
         <div class="container">
             <h2>Our Menu</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="appetizers">Appetizers</button>
+                <button class="filter-btn" data-filter="mains">Main Courses</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+            </div>
             <div class="menu-categories">
-                <div class="category">
+                <div class="category appetizers">
                     <h3>Appetizers</h3>
                     <ul>
                         <li>Bruschetta - $8.99</li>
@@ -62,7 +73,7 @@
                         <li>Stuffed Mushrooms - $10.99</li>
                     </ul>
                 </div>
-                <div class="category">
+                <div class="category mains">
                     <h3>Main Courses</h3>
                     <ul>
                         <li>Grilled Salmon - $24.99</li>
@@ -71,7 +82,7 @@
                         <li>Vegetarian Pasta - $16.99</li>
                     </ul>
                 </div>
-                <div class="category">
+                <div class="category desserts">
                     <h3>Desserts</h3>
                     <ul>
                         <li>Tiramisu - $7.99</li>
@@ -108,5 +119,7 @@
             <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
